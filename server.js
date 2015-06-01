@@ -4,6 +4,6 @@ var express = require('express'),
 app
     .use(express.static('./public'))
     .get('*', function (req, res) {
-        res.sendFile('public/main.html');
+        res.sendfile('public/main.html');
     })
     .listen(3000);
